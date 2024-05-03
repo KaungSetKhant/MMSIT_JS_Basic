@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .result-box {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+      }
+      #result {
+        display: inline-block;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div class="result-box">
+        <p class="">Result : <span id="result"></span></p>
+        <button onclick="storeHandle()">Store</button>
+        <button onclick="clearHandle()">Clear</button>
+      </div>
+      <div class="">
+        <input type="number" id="widthInput" placeholder="width" />
+        <input type="number" id="heightInput" placeholder="height" />
+        <button id="calcBtn" onclick="handleBtn()">Calculate</button>
+      </div>
+      <ul id="records"></ul>
+    </main>
+    <script src="js/area_calc.js"></script>
+  </body>
+</html>
